@@ -1,0 +1,22 @@
+{
+  "name": "向阳学习岛｜四年级 AI 学习工作台",
+  "short_name": "向阳学习岛",
+  "description": "适合青岛四年级孩子的语数英学习、错题复盘与宠物养成工作台",
+  "lang": "zh-CN",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff1f6",
+  "theme_color": "#865b91",
+  "categories": ["education", "kids"],
+  "icons": [
+    {
+      "src": "cute-pets-sprite.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
