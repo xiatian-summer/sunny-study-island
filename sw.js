@@ -1,5 +1,5 @@
-const CACHE='sunny-island-v7';
-const ASSETS=['./','./index.html','./manifest.webmanifest','./cute-pets-sprite-v2.png','./white-curly-puppy-3d.png','./white-curly-puppy-actions.png','./pet-head.wav','./pet-belly.wav','./pet-feed.wav'];
+const CACHE='sunny-island-v8';
+const ASSETS=['./','./index.html','./manifest.webmanifest','./cute-pets-sprite-v2.png','./white-curly-puppy-3d.png','./puppy-belly-roll-8frames.png','./puppy-bark-real.mp3','./puppy-happy-real.mp3'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
